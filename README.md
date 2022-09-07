@@ -1,12 +1,12 @@
 # Proyecto: Las 7 vacas flacas
 
-### Objetivo
+## Objetivo
 
 Diseñar un programa que guarde en una matriz de dimensión 7xN la producción de leche diaria (en
 litros) de cada una de las vacas, durante una semana, la solución planteada debe cumplir
 con los requisitos propuestos.
 
-Requerimientos:
+### Requerimientos:
 
 - 👉 El tamaño de la matriz debe ser máximo de 7x50
 - 👉 El usuario del software mediante una variable N indica cuántas vacas tiene la
@@ -16,7 +16,7 @@ Requerimientos:
   este valor para cada una de las vacas, impidiendo la continuación de la siguiente
   lectura hasta que se ingrese un dato válido.
 
-El programa debe calcular y mostrar:
+### El programa debe calcular y mostrar:
 
 1. La producción total de leche del hato en cada uno de los sietes días.
 2. El día de la semana con mayor y menor producción.
