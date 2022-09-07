@@ -33,7 +33,7 @@ con los requisitos propuestos.
 - 👉 Colors
 - 👉 Inquirer
 
-### Repositorio - GitHub
+### Repositorio - GitHub de la Apliación
 
 - 👉 [Github](https://github.com/ingagudelob/7-vacas-flacas.git)
 
@@ -42,3 +42,7 @@ con los requisitos propuestos.
 - Descargar el proyecto o clonarlo.
 - Abrir la consola e ir a la carpeta del proyecto.
 - Ejecute estos comandos: `npm start`.
+
+### Video tutorial - Link
+
+- 👉 [Youtube](https://github.com/ingagudelob/7-vacas-flacas.git)

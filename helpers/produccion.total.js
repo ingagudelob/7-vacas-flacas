@@ -7,6 +7,7 @@ let indexMayor = 0;
 let indexMenor = 0;
 let menor = 12;
 let diaMax = 0;
+let aux = 0;
 
 const prodTotal = async (prod, desc) => {
   for (let i = 0; i < 7; i++) {
@@ -53,11 +54,19 @@ const mayorMenor = async () => {
 const masLecheXdia = async (prod, desc) => {
   for (let i = 0; i < 7; i++) {
     for (let j = 0; j < desc; j++) {
-      if (prod[i][j] >= diaMax) {
+      if (prod[i][j] >= diaMax && prod[i][j] >= aux) {
+        aux = diaMax;
+        diaMax = prod[i][j];
+        if (diaMax[i] > mayor) {
+          mayor = diaMax[i];
+          indexMayor = i;
+        }
         indexMax.push(prod[i][j]);
       }
     }
     vacaMasLeche[i] = indexMax;
+    aux = 0;
+    diaMax = 0;
   }
 
   console.log("\nNúmero de la vaca que dió mas leche en cada día\n");

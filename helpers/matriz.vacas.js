@@ -42,6 +42,11 @@ const setMatriz = async (n) => {
       tablaVacas[i][j] = parseFloat(prod);
     }
   }
+  console.log("Dias    |  Vacas ");
+  console.log("------- | -----------------------");
+  for (let index in tablaVacas) {
+    console.log(`Dia  ${parseInt(index) + 1}. | ${tablaVacas[index]} `);
+  }
   return tablaVacas;
 };
 

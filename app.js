@@ -23,12 +23,6 @@ const main = async () => {
         // Hago un input a la consola y guardo el retorno en desc
         desc = await leerInput("Ingrese la cantidad de Vacas: ");
         tablaProd = await setMatriz(desc).then((data) => data);
-        console.log("Dias    |  Vacas ");
-        console.log("------- | -----------------------");
-        for (let index in tablaProd) {
-          console.log(`Dia  ${parseInt(index) + 1}. | ${tablaProd[index]} `);
-        }
-
         break;
 
       case "2":
