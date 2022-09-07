@@ -57,28 +57,20 @@ const masLecheXdia = async (prod, desc) => {
       if (prod[i][j] >= diaMax && prod[i][j] >= aux) {
         aux = diaMax;
         diaMax = prod[i][j];
-        if (diaMax[i] > mayor) {
-          mayor = diaMax[i];
-          indexMayor = i;
+        if (diaMax[j] >= mayor) {
+          indexMax.push(j);
         }
-        indexMax.push(prod[i][j]);
       }
     }
     vacaMasLeche[i] = indexMax;
     aux = 0;
     diaMax = 0;
   }
-
-  console.log("\nNúmero de la vaca que dió mas leche en cada día\n");
-  console.log("Dias    |  Vacas ");
-  console.log("------- | -------------------------");
-
-  for (let i = 0; i < 7; i++) {
-    for (let index in vacaMasLeche) {
-      console.log(`Dia  ${parseInt(i) + 1}. | Vaca ${vacaMasLeche[index]} `);
-    }
+  console.log("\nDias    |  Vacas ");
+  console.log("------- | -----------------------");
+  for (let index in vacaMasLeche) {
+    console.log(`Dia  ${parseInt(index) + 1}. | Vaca ${parseInt(index)} `);
   }
-  console.log(vacaMasLeche);
 };
 
 module.exports = {

@@ -45,4 +45,4 @@ con los requisitos propuestos.
 
 ### Video tutorial - Link
 
-- 👉 [Youtube](https://github.com/ingagudelob/7-vacas-flacas.git)
+- 👉 [Youtube](https://youtu.be/B579l4eFHJw)
