@@ -26,9 +26,12 @@ const main = async () => {
         break;
 
       case "2":
-        await prodTotal(tablaProd, desc);
-        await mayorMenor();
-        await masLecheXdia(tablaProd, desc);
+        if (tablaProd === [] || desc === 0) {
+          await prodTotal(tablaProd, desc);
+          await mayorMenor();
+          await masLecheXdia(tablaProd, desc);
+        }
+        console.log("¡NO existen datos disponibles!");
         break;
 
       case "3":
